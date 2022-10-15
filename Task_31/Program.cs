@@ -63,7 +63,7 @@ for (int i = 0; i < array.Length; i++)
 return new int[] {sumNegative, sumPositive};
 }
 
-int[] arr =  CreateArrayRndInt(12, -9, 9);
+int[] arr =  CreateArrayRndInt(12, -9, 10);
 PrintArray(arr);
 int[] getSumPositiveNegativeElements =GetSumPositiveNegativeElements(arr);
 System.Console.WriteLine();
