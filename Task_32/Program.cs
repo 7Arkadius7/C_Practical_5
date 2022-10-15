@@ -1,4 +1,6 @@
-﻿int[] CreateArrayRndInt(int size, int min, int max)
+﻿Console.Clear();
+
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] array = new int[size];
     var rnd = new Random();
@@ -20,18 +22,17 @@ void PrintArray(int[] array)
     System.Console.Write("]");
 }
 
-int[] GetSumPositiveNegativeElements(int[] array)
+void InvertArray(int[] array)
 {
 
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = array[i] * (-1);
     }
-    return array;
-}
+   }
 
 int[] arr = CreateArrayRndInt(12, -9, 10);
 PrintArray(arr);
 System.Console.WriteLine();
-int[] metamorfoza = GetSumPositiveNegativeElements(arr);
-PrintArray(metamorfoza);
+InvertArray(arr);
+PrintArray(arr);
