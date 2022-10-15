@@ -34,8 +34,10 @@ int EvenNumbers(int[] array)
     }
     return count;
 }
+Console.WriteLine("Пожалуйста, введите длинну массива");
+int lengthArr = Convert.ToInt32(Console.ReadLine());
 
-int[] arr = CreateArrayRndInt(5, 100, 999);
+int[] arr = CreateArrayRndInt(lengthArr, 100, 999);
 PrintArray(arr);
 System.Console.WriteLine();
 int evenNumbers = EvenNumbers(arr);
