@@ -23,7 +23,7 @@ void PrintArray(int[] array)
 }
 
 
-int SumEvenPosition(int[] array)
+int SumOddNumberPosition(int[] array)
 {
     int sum = default;
     for (int i = 1; i < array.Length; i=i+2)
@@ -43,5 +43,5 @@ int maximal = Convert.ToInt32(Console.ReadLine());
 int[] arr = CreateArrayRndInt(lengthArr, minimal, maximal);
 PrintArray(arr);
 System.Console.WriteLine();
-int sumEvenPosition = SumEvenPosition(arr);
-System.Console.WriteLine($"Сумма чисел стоящих на не четных позициях -> {sumEvenPosition}");
+int sumOddNumberPosition = SumOddNumberPosition(arr);
+System.Console.WriteLine($"Сумма чисел стоящих на не четных позициях -> {sumOddNumberPosition}");
